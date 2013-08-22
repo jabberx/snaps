@@ -1,0 +1,1 @@
+naturaldocs -i . -o HTML doc -p doc

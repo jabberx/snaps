@@ -1,0 +1,7 @@
+*.o
+*.exe
+*.dll
+*.snp
+*.ply
+*.txt
+*.html
