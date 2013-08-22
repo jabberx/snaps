@@ -29,9 +29,10 @@ int empty(float x, float y, float z, float s)
 }
 
 #include <stdio.h>
-
+int counter = 0;
 void write_point(int x, int y, int z, FILE *pcloud)
 {
+    counter++;
     fprintf(pcloud, "%d %d %d\n", x, y, z);
 }
 
@@ -78,5 +79,5 @@ int main(int argc, char **argv)
     s = atoi(argv[5]);
     gen(w, h, d, s, pcloud);
     fclose(pcloud);
-    printf("Done!\n");
+    printf("Done! %d lines written\n", counter);
 }
