@@ -135,7 +135,7 @@ void draw_snapshot(Snapshot *snap, const uint32_t skip)
 		project(expand(snap->x[i], shrink_val)+snap->cx, 
 				expand(snap->y[i], shrink_val)+snap->cy, 
 				expand(snap->z[i], shrink_val)+snap->cz, 
-				snap->nx[i], snap->ny[i], snap->nz[i], snap->sh[i],
-				c32.col);
+				c32.col,
+				snap->nx[i], snap->ny[i], snap->nz[i], snap->sh[i]);
 	}
 }
